@@ -1175,6 +1175,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/qrcode.react/-/qrcode.react-4.2.0.tgz",
+        "sha512": "42982a5a2f2b0fd0ec4bd10fdf3ec14fee6563948586ca868e9816e4363f8b798ae0cf434c1373dc4acc8bc0566047c8dcbd1df0621b1a671d1404b5b884468c",
+        "dest-filename": "2a5a2f2b0fd0ec4bd10fdf3ec14fee6563948586ca868e9816e4363f8b798ae0cf434c1373dc4acc8bc0566047c8dcbd1df0621b1a671d1404b5b884468c",
+        "dest": "flatpak-node/npm-cache/_cacache/content-v2/sha512/42/98"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.4.tgz",
         "sha512": "01725d2e8f2480c6e2998f793b668a42ab33da25a2f63320289851040c44084e081717dc6b30762e6ce5a08a226c92370b5d88958db4f8a15a2effbbd5b50979",
         "dest-filename": "5d2e8f2480c6e2998f793b668a42ab33da25a2f63320289851040c44084e081717dc6b30762e6ce5a08a226c92370b5d88958db4f8a15a2effbbd5b50979",
@@ -1481,6 +1488,12 @@
         "contents": "31b9d460b86d0b9526e5636716b6ae80a18b444b\t{\"key\": \"make-fetch-happen:request-cache:https://registry.npmjs.org/@tauri-apps/cli-linux-x64-gnu/-/cli-linux-x64-gnu-2.9.6.tgz\", \"integrity\": \"sha512-vY0le8ad2KaV1PJr+jCd8fUF9VOjwwQP/uBuTJvhvKTloEwxYA/kAjKK9OpIslGA9m/zcnSo74czI6bBrm2sYA==\", \"time\": 0, \"size\": 8913597, \"metadata\": {\"url\": \"https://registry.npmjs.org/@tauri-apps/cli-linux-x64-gnu/-/cli-linux-x64-gnu-2.9.6.tgz\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
         "dest-filename": "e64f084f60dc00bca6a8fc60160bbba7fb71ff2c531305df4e5efd09e6a8",
         "dest": "flatpak-node/npm-cache/_cacache/index-v5/3a/d0"
+    },
+    {
+        "type": "inline",
+        "contents": "33361379f9661ef8b723d142deda660a6a17a2ca\t{\"key\": \"make-fetch-happen:request-cache:https://registry.npmjs.org/qrcode.react/-/qrcode.react-4.2.0.tgz\", \"integrity\": \"sha512-QpgqWi8rD9DsS9EP3z7BT+5lY5SFhsqGjpgW5DY/i3mK4M9DTBNz3ErMi8BWYEfI3L0d8GIbGmcdFAS1uIRGjA==\", \"time\": 0, \"size\": 29099, \"metadata\": {\"url\": \"https://registry.npmjs.org/qrcode.react/-/qrcode.react-4.2.0.tgz\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
+        "dest-filename": "7e993265b7ec243acebdfd5e5bcfe225c26e0f7f272c3c12811494edbcf8",
+        "dest": "flatpak-node/npm-cache/_cacache/index-v5/05/a5"
     },
     {
         "type": "inline",
