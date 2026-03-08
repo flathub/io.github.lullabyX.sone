@@ -6645,6 +6645,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/tokio-socks/tokio-socks-0.5.2.crate",
+        "sha256": "0d4770b8024672c1101b3f6733eab95b18007dbe0847a8afe341fcf79e06043f",
+        "dest": "cargo/vendor/tokio-socks-0.5.2"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"0d4770b8024672c1101b3f6733eab95b18007dbe0847a8afe341fcf79e06043f\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-socks-0.5.2",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/tokio-util/tokio-util-0.7.18.crate",
         "sha256": "9ae9cec805b01e8fc3fd2fe289f89149a9b66dd16786abd8b19cfa7b48cb0098",
         "dest": "cargo/vendor/tokio-util-0.7.18"
