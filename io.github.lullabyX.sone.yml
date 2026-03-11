@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/lullabyX/sone.git
-        tag: v0.9.0
-        commit: 826f837d8004399eed54409f12d00835f8892aa5
+        tag: v0.10.0
+        commit: 6df7d46fdf398795fbeca3da0dbbc6b108ccf59f
       - node-sources.json
       - cargo-sources.json
     build-options:
