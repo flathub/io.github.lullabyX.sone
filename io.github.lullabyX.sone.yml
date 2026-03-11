@@ -18,7 +18,6 @@ finish-args:
 build-options:
   append-path: /usr/lib/sdk/node24/bin:/usr/lib/sdk/rust-stable/bin
 modules:
-  - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
   - name: sone
     buildsystem: simple
     sources:
