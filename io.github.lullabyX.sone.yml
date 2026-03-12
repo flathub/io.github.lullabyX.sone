@@ -18,14 +18,13 @@ finish-args:
 build-options:
   append-path: /usr/lib/sdk/node24/bin:/usr/lib/sdk/rust-stable/bin
 modules:
-  - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
   - name: sone
     buildsystem: simple
     sources:
       - type: git
         url: https://github.com/lullabyX/sone.git
-        tag: v0.10.1
-        commit: 9a225d3f7c13300cf806cfad5074b02d23626239
+        tag: v0.11.0
+        commit: 689c857cca7b19b966cb97b1f67d332a155625b6
       - node-sources.json
       - cargo-sources.json
     build-options:
