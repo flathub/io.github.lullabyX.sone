@@ -43,7 +43,6 @@ modules:
     build-commands:
       - mkdir -p /run/build/sone/.npm-global
       - npm install -g pnpm-11.1.3.tgz
-      - echo "storeDir: $PWD/flatpak-node/pnpm-store" >> pnpm-workspace.yaml
       - pnpm install --offline --frozen-lockfile
       - cargo --offline fetch --manifest-path src-tauri/Cargo.toml
       - pnpm tauri build --no-bundle
