@@ -16,28 +16,36 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
 build-options:
-  append-path: /usr/lib/sdk/node24/bin:/usr/lib/sdk/rust-stable/bin
+  append-path: /run/build/sone/.npm-global/bin:/usr/lib/sdk/node24/bin:/usr/lib/sdk/rust-stable/bin
 modules:
   - name: sone
     buildsystem: simple
     sources:
       - type: git
         url: https://github.com/lullabyX/sone.git
-        tag: v0.17.0
-        commit: 41abc4fb556d16e996c423e189c08fa49231c43a
-      - node-sources.json
+        tag: v0.18.1
+        commit: 1bbaed674bf0ea40eb389e3e07c65675ecb27cd8
+      - type: file
+        url: https://registry.npmjs.org/pnpm/-/pnpm-11.1.3.tgz
+        sha256: 740302fe768aaf1ba680c5213bd08983f219e0bcf0c96c0c6d7be393b8620c98
+        dest-filename: pnpm-11.1.3.tgz
+      - pnpm-sources.json
       - cargo-sources.json
     build-options:
       env:
         CARGO_HOME: /run/build/sone/cargo
         XDG_CACHE_HOME: /run/build/sone/flatpak-node/cache
-        npm_config_cache: /run/build/sone/flatpak-node/npm-cache
+        npm_config_nodedir: /usr/lib/sdk/node24
+        npm_config_prefix: /run/build/sone/.npm-global
+        npm_config_cache: /run/build/sone/npm-cache
         npm_config_offline: "true"
         CARGO_NET_OFFLINE: "true"
     build-commands:
-      - npm ci --offline --legacy-peer-deps
+      - mkdir -p /run/build/sone/.npm-global
+      - npm install -g pnpm-11.1.3.tgz
+      - pnpm install --offline --frozen-lockfile
       - cargo --offline fetch --manifest-path src-tauri/Cargo.toml
-      - npm run --offline tauri build -- --no-bundle
+      - pnpm tauri build --no-bundle
       - install -Dm755 src-tauri/target/release/sone /app/bin/io.github.lullabyX.sone
       - install -Dm644 src-tauri/icons/icon.png /app/share/icons/hicolor/512x512/apps/io.github.lullabyX.sone.png
       - install -Dm644 data/io.github.lullabyX.sone.desktop /app/share/applications/io.github.lullabyX.sone.desktop
