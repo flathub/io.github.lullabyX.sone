@@ -13,6 +13,23 @@ finish-args:
   - --device=dri
   - --share=ipc
   - --share=network
+  - --filesystem=xdg-run/discord-ipc-0:ro
+  - --filesystem=xdg-run/discord-ipc-1:ro
+  - --filesystem=xdg-run/discord-ipc-2:ro
+  - --filesystem=xdg-run/discord-ipc-3:ro
+  - --filesystem=xdg-run/discord-ipc-4:ro
+  - --filesystem=xdg-run/discord-ipc-5:ro
+  - --filesystem=xdg-run/discord-ipc-6:ro
+  - --filesystem=xdg-run/discord-ipc-7:ro
+  - --filesystem=xdg-run/discord-ipc-8:ro
+  - --filesystem=xdg-run/discord-ipc-9:ro
+  - --filesystem=xdg-run/app/com.discordapp.Discord:create
+  - --filesystem=xdg-run/app/com.discordapp.DiscordCanary:create
+  - --filesystem=xdg-run/app/dev.vencord.Vesktop:create
+  - --filesystem=xdg-run/.flatpak/com.discordapp.Discord/xdg-run:ro
+  - --filesystem=xdg-run/.flatpak/dev.vencord.Vesktop/xdg-run:ro
+  - --filesystem=xdg-run/snap.discord:ro
+  - --filesystem=xdg-run/snap.discord-canary:ro
   - --talk-name=org.kde.StatusNotifierWatcher
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
 build-options:
