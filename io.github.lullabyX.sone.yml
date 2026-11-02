@@ -26,10 +26,11 @@ finish-args:
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=xdg-run/app/com.discordapp.DiscordCanary:create
   - --filesystem=xdg-run/app/dev.vencord.Vesktop:create
-  - --filesystem=xdg-run/.flatpak/com.discordapp.Discord/xdg-run:ro
-  - --filesystem=xdg-run/.flatpak/dev.vencord.Vesktop/xdg-run:ro
-  - --filesystem=xdg-run/snap.discord:ro
-  - --filesystem=xdg-run/snap.discord-canary:ro
+  - --filesystem=xdg-run/.flatpak/com.discordapp.Discord/xdg-run:create
+  - --filesystem=xdg-run/.flatpak/com.discordapp.DiscordCanary/xdg-run:create
+  - --filesystem=xdg-run/.flatpak/dev.vencord.Vesktop/xdg-run:create
+  - --filesystem=xdg-run/snap.discord:create
+  - --filesystem=xdg-run/snap.discord-canary:create
   - --talk-name=org.kde.StatusNotifierWatcher
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
 build-options:
@@ -40,8 +41,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/lullabyX/sone.git
-        tag: v0.22.1
-        commit: 64435d08551aea1c4325029dd893aa25a874cd2f
+        tag: v0.23.0
+        commit: a4accb7ee5fe3b33b8cb75f6a645e462ff3303da
       - type: file
         url: https://registry.npmjs.org/pnpm/-/pnpm-11.1.3.tgz
         sha256: 740302fe768aaf1ba680c5213bd08983f219e0bcf0c96c0c6d7be393b8620c98
